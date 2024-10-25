@@ -1,18 +1,21 @@
 body{
     display: grid;
     place-content: center;
+    min-height: 100dvh;
+}
+h1{
+    text-align: center;
 }
 .table{
     width: 100%;
     max-width: 800px;
     display: grid ;
-    padding: 0em 1em;
-    gap: 1em;
     border: 2px solid black;
+    padding: .2em;
+    box-shadow: 3px 3px 5px rgb(66, 66, 66);
     grid-template-columns: repeat(4 , 1fr);
     grid-template-rows: auto;
     background-color: rgb(163, 163, 219);
-
     grid-template-areas: "estudianteHeader calificacionesHeader calificacionesHeader calificacionesHeader" 
                           "estudianteHeader headerMatematicas headerLengua headerCiencias"
                           "estudiante1 nota1 nota2 nota3"
@@ -21,111 +24,94 @@ body{
                           "promedioNota promedioNota promedioNota notaFinal"
 }
 
+.border{
+    border-collapse: collapse;
+    border: solid black 1px;
+    text-align: center;
+}
+
 .header__estudiante{
     grid-area: estudianteHeader;
     font-weight: bold;
-    border: 2px solid black;
-
 }
 
 .header__item__calificaciones{
     grid-area: calificacionesHeader;
     font-weight: bold;
-
 }
 
 .header__item__matematicas{
     grid-area: headerMatematicas;
     font-weight: bold;
-
 }
 
 .header__item__lengua{
     grid-area: headerLengua ;
     font-weight: bold;
-
 }
 
 .header__item__ciencias{
     grid-area: headerCiencias;
     font-weight: bold;
-
 }
 
 .table__item__1{
     grid-area: estudiante1;
     font-weight: bold;
-
 }
 
 .nota1{
     grid-area: nota1;
-
 }
 
 .nota2{
     grid-area: nota2;
-
 }
 
 .nota3{
     grid-area: nota3;
-
 }
 
 .table__item__2{
     grid-area: estudiante2;
     font-weight: bold;
-
-
 }
 
 .nota4{
     grid-area: nota4;
-
 }
 
 .nota5{
     grid-area: nota5;
-
 }
 
 .nota6{
     grid-area: nota6;
-
 }
 
 .table__item__3{
     grid-area: estudiante3;
     font-weight: bold;
-
-
 }
 
 .nota7{
     grid-area: nota7;
-
 }
 
 .nota8{
     grid-area: nota8;
-
 }
 
 .nota9{
     grid-area: nota9;
-
 }
 
 .table__promedio{
     grid-area: promedioNota;
     font-weight: bold;
-
-
 }
 
 .nota__total{
     grid-area: notaFinal;
     font-weight: bold;
-
 }
